@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/layout1"
+    android:gravity="center"
+    >
+    <Button
+        android:id="@+id/btAsn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="test"
+        android:text="开始" />
+
+    <TextView
+        android:id="@+id/tvText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="第一：需要Handler、触发事件、Thread。\n
+第二：Handler处理完任务更新UI的机制，通过Handler handler = new Handler(){\n
+      Public void handleMessage(Message msg){  ………具体的更新事务 }}\n
+第三：Thread 实现run方法，通过\n
+Message（“message.what”、”message.arg1”、 ”message.arg2”）把整理的结果通过sendMessage(message)传给Handler，\n
+"
+        />
+
+
+</LinearLayout>

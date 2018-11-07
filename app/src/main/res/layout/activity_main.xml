@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <Button
+            android:id="@+id/onTouchListnener"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textAllCaps="false"
+            android:textSize="10dp"
+            android:minHeight="10dp"
+            android:minWidth="10dp"
+            android:text="触屏"
+            android:onClick="onTouchListnenergk"
+            />
+        <Button
+            android:id="@+id/serviceId"
+            android:onClick="serviceOnclick"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textAllCaps="false"
+            android:minHeight="10dp"
+            android:minWidth="10dp"
+            android:textSize="10dp"
+            android:text="Service"
+
+            />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:minHeight="10dp"
+            android:minWidth="10dp"
+            android:onClick="broadcastOnClick"
+            android:textSize="10dp"
+            android:textAllCaps="false"
+            android:layout_height="wrap_content"
+            android:text="broadcast(广播)" />
+
+        <Button
+            android:id="@+id/loyoutObjectId"
+            android:textSize="10dp"
+            android:textAllCaps="false"
+            android:minHeight="10dp"
+            android:minWidth="10dp"
+            android:onClick="layoutObjectOnClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="布局文件" />
+        <Button
+            android:id="@+id/handlerOrMessage"
+            android:textSize="10dp"
+            android:textAllCaps="false"
+            android:minHeight="10dp"
+            android:minWidth="10dp"
+            android:onClick="handlerOrMessageOnClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Handler与Message" />
+    </TableRow>
+    <TableRow>
+        <Button
+            android:textSize="10dp"
+            android:textAllCaps="false"
+            android:minHeight="10dp"
+            android:minWidth="10dp"
+            android:onClick="xmlOnClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="XML解析" />
+        <Button
+            android:textSize="10dp"
+            android:textAllCaps="false"
+            android:minHeight="10dp"
+            android:minWidth="10dp"
+            android:onClick="jsonOnClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="JSON解析" />
+        <Button
+        android:textSize="10dp"
+        android:textAllCaps="false"
+        android:minHeight="10dp"
+        android:minWidth="10dp"
+        android:onClick="alertdialogOnClick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AlertDialog解析" />
+        <Button
+            android:textSize="10dp"
+            android:textAllCaps="false"
+            android:minHeight="10dp"
+            android:minWidth="10dp"
+            android:onClick="adapterOnClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="adapter" />
+        <Button
+            android:textSize="10dp"
+            android:textAllCaps="false"
+            android:minHeight="10dp"
+            android:minWidth="10dp"
+            android:onClick="spinnerOnClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Spinner下拉级联" />
+    </TableRow>
+    <TableRow>
+        <Button
+            android:textSize="10dp"
+            android:textAllCaps="false"
+            android:minHeight="10dp"
+            android:minWidth="10dp"
+            android:onClick="intentOnClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Intent" />
+        <Button
+            android:textSize="10dp"
+            android:textAllCaps="false"
+            android:minHeight="10dp"
+            android:minWidth="10dp"
+            android:onClick="gridViewDemoOnClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="gridView" />
+        <Button
+            android:textSize="10dp"
+            android:textAllCaps="false"
+            android:minHeight="10dp"
+            android:minWidth="10dp"
+            android:onClick="oracleDemoOnClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="数据存储" />
+        <Button
+            android:textSize="10dp"
+            android:textAllCaps="false"
+            android:minHeight="10dp"
+            android:minWidth="10dp"
+            android:onClick="musicAndVideoDemoOnClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="音频与视频与拍照" />
+    </TableRow>
+    <TableRow>
+        <Button
+            android:text="手机影音"
+            android:layout_width="match_parent"
+            android:onClick="phoneViedoDemoOnClick"
+            />
+        <Button
+            android:text="Thread"
+            android:textAllCaps="false"
+            android:layout_width="match_parent"
+            android:onClick="ThreadOnClick"
+            />
+        <Button
+            android:text="设计模式"
+            android:textAllCaps="false"
+            android:layout_width="match_parent"
+            android:onClick="DesignClick"
+            />
+        <Button
+            android:text="RecyclerView"
+            android:textAllCaps="false"
+            android:layout_width="match_parent"
+            android:onClick="RecyclerViewClick"
+            />
+        <Button
+            android:text="APP更新"
+            android:textAllCaps="false"
+            android:layout_width="match_parent"
+            android:onClick="appRe"
+            />
+
+
+
+    </TableRow>
+
+</TableLayout>

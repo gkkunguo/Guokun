@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:text="属性值是true或false  \n
+android:layout_centerHrizontal 水平居中  \n
+android:layout_centerVertical 垂直居中  \n
+android:layout_centerInparent 相对于父元素完全居中。  \n
+android:layout_alignParentBottom 位于父元素的下边缘  \n
+android:layout_alignParentTop 位于父元素的上边缘  \n
+android:layout_alignParentLeft 位于父元素的左边缘  \n
+android:layout_alignParentRight 位于父元素的右边缘  \n
+属性值是”@id/*“  \n
+android:layout_below 在某元素的下方  \n
+android:layout_above 在某元素的上方  \n
+andorid:layout_toRightOf 在某元素的右方  \n
+android:layout_toLeftOf 在某元素的左方  \n
+android:layout_alignBottom 和某元素下方对齐  \n
+android:layout_alignTop 和某元素上方对齐  \n
+android:layout_alignRight 和某元素右方对齐  \n
+android:layout_alignLeft 和某元素左方  对齐  \n
+属性值是数值  \n
+android:layout_marginLeft 离某元素左边缘的距离  \n
+android:layout_marginRight 离某元素右边缘的距离  \n
+android:layout_marginTop 离某元素上边缘的距离  \n
+android:layout_marginBottom 离某元素下边缘的距离"
+        android:layout_height="match_parent" />
+
+
+</RelativeLayout>

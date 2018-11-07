@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <EditText
+        android:id="@+id/etData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="提交"
+        android:onClick="dataFileCommiteOnClick"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="读取"
+        android:onClick="dataFileReadOnClick"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="读取Raw中的文件"
+        android:onClick="dataFileReadRawOnClick"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/outputCd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="存入CD卡"
+            android:onClick="inputOrOutputCdOnclick"
+            />
+        <Button
+            android:id="@+id/inputCd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="读取CD卡"
+            android:layout_weight="1"
+            android:onClick="inputOrOutputCdOnclick"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="写入信息到文件
+FileOutputStream fileOutputStream = openFileOutput('guokun.txt', Context.MODE_PRIVATE);\n
+OutputStreamWriter outputStreamWriter = new OutputStreamWriter(fileOutputStream);\n
+BufferedWriter bufferedWriter = new BufferedWriter(outputStreamWriter);\n
+bufferedWriter.write(str);\n
+读取文件信息\n
+FileInputStream fileInputStream = openFileInput('guokun.txt');\n
+//注：在raw里面读取：把第一步修改为\n
+       //InputStream inputStream = getResources().openRawResource(R.raw.rawtest);\n
+// 注：FileInputStream也可以是：动态取得一个地址，把文件放进去\n
+       //File dir2 = Environment.getExternalStorageDirectory();\n
+       //File file2 = new File(dir2,'guokunfile.txt');\n
+       // FileInputStream  fis = new FileInputStream(file2);\n
+
+InputStreamReader inputStreamReader = new InputStreamReader(fileInputStream);\n
+BufferedReader bufferedReader = new BufferedReader(inputStreamReader);\n
+
+"
+        />
+
+
+
+</LinearLayout>

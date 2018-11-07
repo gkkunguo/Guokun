@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BaseAdapter"
+        android:textAllCaps="false"
+        android:onClick="baseAdapteOnclick"
+        />
+    <ListView
+        android:layout_width="match_parent"
+        android:id="@+id/listview1"
+        android:layout_height="wrap_content">
+    </ListView>
+    <ListView
+        android:layout_width="match_parent"
+        android:id="@+id/listview2"
+        android:layout_height="wrap_content">
+    </ListView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="一、适配数据 \n
+private String[] data={'北京','上海','天津'};\n
+二、适配器。
+第一参数：当前的上下文\n
+第二参数：想要适配的布局文件\n
+经三参数：适配文件中的id\n
+第四参数：适配数据\n
+三、把适配器增加到布局文件中\n
+listView.setAdapter(adapter);
+"></TextView>
+
+
+</LinearLayout>

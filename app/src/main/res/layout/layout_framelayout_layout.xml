@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/mylayout"
+    android:layout_height="match_parent"
+    tools:context=".layoutObject.LayoutFrameLayout"
+    android:background="@mipmap/back">
+ <TextView
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="
+     注：\n
+     一、自定义控件继承View，实现onDraw（）方法。a.需要一支Paint画笔。b.BitMap
+      bitmap =  BitmapFactory.decodeResource(this.getResources(), R.mipmap.s_jump);
+      c.canvas.drawBitmap(bitmap,bitmapX,bitmapY,paint);图、x、y、画笔。\n
+      二、取得： FrameLayout frameLayout =(FrameLayout)findViewById(R.id.mylayout);\n
+      三、调用自定义控件：final MeziView mezi = new MeziView(LayoutFrameLayout.this);\n
+      四、mezi.setOnTouchListener设置触屏事件，点击监听\n
+      五、 mezi.invalidate();//是把当前的控件设置为无效，才能重新加载变化后的控件。\n
+      六、最终把自定义控件增加到framlayou中  frameLayout.addView(mezi);\n
+      七、布局文件中的tools:context=作用是：把framlayou与activity关系上
+"
+     />
+
+</FrameLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/mylayout"
+    android:foregroundGravity="center"
+    android:layout_height="match_parent"
+    tools:context=".layoutObject.LayoutFrameLayout"
+    android:background="@mipmap/back">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="
+1.定时器：Timer timer = new Timer();  \n
+2.TimerTask task = new TimerTask() {  \n
+    public void run() {    \n
+        handler.sendEmptyMessage(0x123);  \n
+    }
+};  \n
+2.timer.schedule(task, firstTime, period);注：task为定时的事务；firstTime:第一次执行的时间； period:间隔多长时间执行一次 \n
+"
+        />
+
+
+</FrameLayout>

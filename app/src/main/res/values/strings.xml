@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Guokun</string>
+    <string-array name="spinner1">
+        <item>AAA</item>
+        <item>BBB</item>
+        <item>CCC</item>
+
+    </string-array>
+
+</resources>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="LinearLayout布局"
+        android:onClick="LinearLayout"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="RelativeLayout布局"
+        android:onClick="RelativeLayout"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="TableLayout布局"
+            android:onClick="TableLayout"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="FrameLayout布局1"
+            android:onClick="FrameLayout"/>
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="FrameLayout2"
+            android:text="FrameLayout布局2(handler、定时器、自定义控件)"
+            android:textAllCaps="false" />
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="GridLayout"
+            android:text="GridLayout"
+            android:textAllCaps="false" />
+        <Button
+            android:id="@+id/button9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="drawerLayoutOnClick"
+            android:text="DrawerLayout侧滑"
+            android:textAllCaps="false" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="horizontalScrollViewLayoutOnClick"
+            android:text="horizontalScrollViewLayout"
+            android:textAllCaps="false" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="scrollViewLayoutOnClick"
+            android:text="scrollViewLayout"
+            android:textAllCaps="false" />
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

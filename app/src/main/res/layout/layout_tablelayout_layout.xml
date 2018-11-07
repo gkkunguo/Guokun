@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <TableRow>
+        <Button android:text="1" />
+        <Button android:text="2" />
+
+        <Button
+            android:id="@+id/button10"
+            android:text="3" />
+
+        <Button android:text="4" />
+    </TableRow>
+    <TableRow>
+        <Button android:text="5"/>
+        <Button android:text="6"/>
+        <Button android:text="7" android:layout_span="2"/>
+    </TableRow>
+    <TableRow>
+        <Button android:text="1" />
+        <Button android:text="9"  />
+        <Button android:text="10" />
+        <Button android:text="10" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button android:text="11" />
+
+        <Button android:text="12" />
+
+        <Button android:text="13" />
+    </TableRow>
+
+    <Button android:text="14" />
+    <TableRow>
+        <TableLayout android:layout_span="3">
+            <TableRow>
+            <Button android:text="11" />
+            <Button android:text="12" />
+            <Button android:text="13" />
+            </TableRow>
+            <TableRow>
+                <Button android:text="11" />
+                <Button android:text="12" android:layout_span="2"  />
+            </TableRow>
+        </TableLayout>
+        <Button android:text="20" android:layout_height="match_parent" />
+    </TableRow>
+    <TableRow>
+        <Button android:text="2" android:layout_column="2" />
+    </TableRow>
+    <TableRow>
+       <TableLayout android:layout_span="4">
+           <TextView android:text="
+1.TableLayout与TableRow可以进行交互使用。 \n
+2.TableRow决定一行，tableLayout控制一行显示多少。\n
+3.layout_column，后面数设置为n，代表在n+1列显示. \n
+" />
+       </TableLayout>
+    </TableRow>
+
+</TableLayout>

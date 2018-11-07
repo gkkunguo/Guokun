@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="listDialogOnclick"
+        android:text="列表对话框" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="radioDialogOnclick"
+        android:text="单选对话框" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:onClick="radioDialogOnclickS"
+        android:layout_height="wrap_content"
+        android:text="保存选中内容的对话框" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:onClick="radioDialogMuli"
+        android:layout_height="wrap_content"
+        android:text="复选框" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="displayProgressDialog"
+        android:text="（显示）进度条对话框" />
+</LinearLayout>

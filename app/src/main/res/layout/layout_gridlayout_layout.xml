@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:onClick="layoutGridlayouLayouOnclick1"
+        android:text="gridLayout1"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\n
+    对齐方式:  android:layout_gravity= center,left,right,buttom  eg: buttom|left   \n
+    设置有多少行:android:rowCount='4'       //设置网格布局有4行\n
+    设置有多少列:android:columnCount='4'    //设置网格布局有4列\n
+    组件在第几行:android:layout_row = '1'   //设置组件位于第二行\n
+    组件在第几列:android:layout_column = '2'   //设置该组件位于第三列\n
+    横跨几行:android:layout_rowSpan = '2'    //纵向横跨2行\n
+    横跨几列:android:layout_columnSpan = '3'     //横向横跨2列\n
+
+    "/>
+
+
+
+
+</LinearLayout>

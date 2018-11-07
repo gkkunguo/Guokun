@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <EditText
+        android:id="@+id/etData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="提交"
+        android:onClick="dataSharedPreferences1OnClick"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="读取"
+        android:onClick="dataSharedPreferencesReadOnClick"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="
+一、取得SharedPreferences  \n
+二、参数一：是存储文件的名称；参数二：进入模式，只有当前程序自身使用 \n
+private SharedPreferences preferences; \n
+preferences = getSharedPreferences('test', Context.MODE_PRIVATE); \n
+三、存入。获得编辑器Editor，再把key与value 的put进去，提交。\n
+SharedPreferences.Editor editor = preferences.edit();\n
+editor.putString('test',etDataTest);\n
+editor.commit();\n
+四、读取通过getString方法\n
+String read = preferences.getString('test','');\n
+    etData.setText(read);\n
+    "
+        />
+
+</LinearLayout>
