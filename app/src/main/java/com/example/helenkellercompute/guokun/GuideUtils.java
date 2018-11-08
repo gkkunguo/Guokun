@@ -1,5 +1,7 @@
 package com.example.helenkellercompute.guokun;
 
+import com.example.helenkellercompute.guokun.activity.OkhttpActivity;
+import com.example.helenkellercompute.guokun.activity.RetrofitActivity;
 import com.example.helenkellercompute.guokun.adapter.AdapterDemo;
 import com.example.helenkellercompute.guokun.alertdialog.AlertDialogDemo;
 import com.example.helenkellercompute.guokun.dataOrOracle.OracleDemo;
@@ -65,6 +67,14 @@ public class GuideUtils {
 
     //级联
     private SpinnerDemo spinnerDemo;
+
+    //okhttp
+    private OkhttpActivity okh;
+    //Retrofit
+    private RetrofitActivity retrofitActivity;
+
+
+
 
 
 
