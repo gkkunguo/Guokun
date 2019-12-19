@@ -48,7 +48,13 @@
         <activity android:name=".layoutObject.DrawerLayout" />
         <activity android:name=".layoutObject.HorizontalScrollViewLayout" />
         <activity android:name=".layoutObject.ScrollViewLayout" />
-        <activity android:name=".xml.XmlDemo" />
+        <activity android:name=".xml.XmlDemo" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name=".json.JsonDemo" />
         <activity android:name=".alertdialog.AlertDialogDemo" />
         <activity android:name=".adapter.AdapterDemo" />
@@ -126,11 +132,6 @@
         <activity android:name=".activity.OkhttpActivity">
         </activity>
         <activity android:name=".activity.RetrofitActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
     </application>
 

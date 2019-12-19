@@ -28,6 +28,7 @@ import java.util.List;
  */
 
 public class XmlDemo extends Activity {
+    private static final String TAG = "XmlDemo";
     private TextView tv1;
     private static final int MSG_FINAL = 0X000;
     private Thread thread = new Thread() {
@@ -103,10 +104,31 @@ public class XmlDemo extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.xml_layout);
         tv1 = (TextView) findViewById(R.id.textView);
+        parserSax();
     }
 
     public void parserXml(View view) {
         thread.start();
+    }
+
+    private void parserSax(){
+        new Thread(){
+            @Override
+            public void run() {
+                InputStream inputStream = getResources().openRawResource(R.raw.persons);
+                if(inputStream != null){
+                    List<Person>  personArrayList1 = XMLParsingMethods.readXmlBySAX(inputStream);
+                    Log.i(TAG, "runsax: "+personArrayList1.toString());
+
+                }
+                InputStream inputStream2 = getResources().openRawResource(R.raw.persons);
+                if(inputStream2 != null){
+                    List<Person>  personArrayList2 = XMLParsingMethods.readXmlByDOM(inputStream2);
+                    Log.i(TAG, "rundom: "+personArrayList2.toString());
+                }
+
+            }
+        }.start();
     }
 
 }
