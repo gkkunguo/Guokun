@@ -96,7 +96,6 @@
         <activity android:name=".thread.handlerthread.ThreadActivity" />
         <activity android:name=".design.DesignDemosActivity" />
         <activity android:name=".design.MVP.View.StudentActivity" />
-        <activity android:name=".design.MVVM.View.LoginActivity" />
         <activity android:name=".design.MVC.View.BookActivity" />
         <!-- service -->
         <service android:name=".StartServiceDemo" />
