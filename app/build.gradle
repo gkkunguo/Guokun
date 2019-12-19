@@ -20,9 +20,6 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-//    dataBinding{
-//        enabled = true
-//    }
 }
 
 dependencies {
@@ -30,7 +27,6 @@ dependencies {
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-   // implementation 'com.android.support.constraint:constraint-layout:1.0.0-alpha4'
     testImplementation 'junit:junit:4.12'
     implementation 'com.tencent.bugly:crashreport_upgrade:latest.release'
     implementation 'com.squareup.okhttp3:okhttp:4.2.2'
