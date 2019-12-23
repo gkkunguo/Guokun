@@ -1,24 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.helenkellercompute.guokun">
-
     <!-- <uses-permission android:name="android.permission.RECEIVE_SMS"/> -->
     <uses-permission android:name="android.permission.SEND_SMS" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.INTERNET" />
-    <!-- 拍照权限 -->
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- 拍照权限 -->
     <uses-permission android:name="android.permission.CAMERA" />
 
-    <uses-feature android:name="android.hardware.Camera" />
-    <!-- 拍照权限 -->
-
+    <uses-feature android:name="android.hardware.Camera" /> <!-- 拍照权限 -->
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-    <uses-permission android:name="android.permission.READ_LOGS" />
-    <!-- 保存资源到SD卡 -->
+    <uses-permission android:name="android.permission.READ_LOGS" /> <!-- 保存资源到SD卡 -->
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
@@ -28,7 +23,14 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".ipc.binder.BinderPoolActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
         <activity android:name=".OnTouch" />
         <activity android:name=".ServiceDemo" />
         <activity android:name=".BroadcastReceiverDemo" />
@@ -48,12 +50,7 @@
         <activity android:name=".layoutObject.DrawerLayout" />
         <activity android:name=".layoutObject.HorizontalScrollViewLayout" />
         <activity android:name=".layoutObject.ScrollViewLayout" />
-        <activity android:name=".xml.XmlDemo" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+        <activity android:name=".xml.XmlDemo">
         </activity>
         <activity android:name=".json.JsonDemo" />
         <activity android:name=".alertdialog.AlertDialogDemo" />
@@ -103,15 +100,19 @@
         <activity android:name=".design.DesignDemosActivity" />
         <activity android:name=".design.MVP.View.StudentActivity" />
         <activity android:name=".design.MVC.View.BookActivity" />
+
         <!-- service -->
         <service android:name=".StartServiceDemo" />
         <service android:name=".StartServiceDemo1" />
         <service android:name=".BroadcastStartServiceDemo" />
         <service android:name=".musicandvideo.MusicDemoService" />
         <service android:name=".service.MIntentService" />
-        <service android:name=".service.MService" />
+        <service android:name=".service.MService" /> <!-- 广播 -->
+        <service
+            android:name=".ipc.binder.BinderPoolService"
+            android:process=":remote" />
 
-        <!-- 广播 -->
+        <!--receiver-->
         <receiver android:name=".BroadcastReceiverMyReceiver">
             <intent-filter>
                 <action android:name="guokun_broadcastreceiver" />
@@ -129,10 +130,8 @@
             </intent-filter>
         </receiver>
 
-        <activity android:name=".activity.OkhttpActivity">
-        </activity>
-        <activity android:name=".activity.RetrofitActivity">
-        </activity>
+        <activity android:name=".activity.OkhttpActivity"></activity>
+        <activity android:name=".activity.RetrofitActivity"></activity>
     </application>
 
 </manifest>

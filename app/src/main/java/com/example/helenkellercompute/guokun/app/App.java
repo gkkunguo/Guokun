@@ -14,8 +14,8 @@ public class App extends Application {
     public void onCreate() {
         super.onCreate();
 
-        Beta.autoCheckUpgrade = false;//设置不自动检查
-
-        Bugly.init(getApplicationContext(), "fac4ac452b", false);
+//        Beta.autoCheckUpgrade = false;//设置不自动检查
+//
+//        Bugly.init(getApplicationContext(), "fac4ac452b", false);
     }
 }
