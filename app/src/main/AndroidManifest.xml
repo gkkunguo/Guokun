@@ -49,6 +49,8 @@
         <activity android:name=".layoutObject.HorizontalScrollViewLayout" />
         <activity android:name=".layoutObject.ScrollViewLayout" />
         <activity android:name=".xml.XmlDemo" >
+        </activity>
+        <activity android:name=".image3cache.MainActivity_ImageCache" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
