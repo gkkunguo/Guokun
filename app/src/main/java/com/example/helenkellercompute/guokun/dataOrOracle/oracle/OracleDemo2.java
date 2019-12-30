@@ -209,6 +209,17 @@ public class OracleDemo2 extends Activity {
         queryAllStudent();
 
     }
+    private void threadOne(){
+        new Thread(){
+            @Override
+            public void run() {
+                super.run();
+                Toast.makeText(OracleDemo2.this,"1111111111",Toast.LENGTH_LONG).show();
+                deleteStu(new TextView(OracleDemo2.this));
+                OracleDemo2.this.finish();
+            }
+        }.start();
+    }
 
 
 
