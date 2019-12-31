@@ -9,6 +9,7 @@ import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Display;
 import android.view.View;
 import android.webkit.JavascriptInterface;
 import android.webkit.JsPromptResult;
@@ -25,6 +26,8 @@ import com.example.helenkellercompute.guokun.R;
 
 import java.util.HashMap;
 import java.util.Set;
+import java.util.Timer;
+import java.util.TimerTask;
 
 public class MainActivity_Webview extends AppCompatActivity {
     private static final String TAG = "MainActivity_Webview";
@@ -45,6 +48,10 @@ public class MainActivity_Webview extends AppCompatActivity {
         addJavascriptInterfaceTest();
         shouldOverrideUrlLoadingTest();
         onJsPromptTest();
+
+        //与webview不相关，测试手机的刷屏率
+        testFPS();
+
 
     }
 
@@ -155,5 +162,15 @@ public class MainActivity_Webview extends AppCompatActivity {
                 return super.onJsConfirm(view, url, message, result);
             }
         });
+    }
+    private void testFPS(){
+        new Timer().schedule(new TimerTask() {
+            @Override
+            public void run() {
+                Display display = getWindowManager().getDefaultDisplay();
+                float refreshRate = display.getRefreshRate();
+                Log.i(TAG, "timer:"+refreshRate);
+            }
+        },0,1000/60);
     }
 }
