@@ -23,13 +23,15 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".pendingIntent.Main2Activity_penging"></activity>
-        <activity android:name=".webview.MainActivity_Webview">
+        <activity android:name=".androidview.SwipeRefreshLayout_banner.SwipeLayoutBannerActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".pendingIntent.Main2Activity_penging" />
+        <activity android:name=".webview.MainActivity_Webview">
         </activity>
         <activity android:name=".MainActivity" />
         <activity android:name=".OnTouch" />
@@ -52,7 +54,7 @@
         <activity android:name=".layoutObject.HorizontalScrollViewLayout" />
         <activity android:name=".layoutObject.ScrollViewLayout" />
         <activity android:name=".xml.XmlDemo" />
-        <activity android:name=".image3cache.MainActivity_ImageCache"></activity>
+        <activity android:name=".image3cache.MainActivity_ImageCache" />
         <activity android:name=".json.JsonDemo" />
         <activity android:name=".alertdialog.AlertDialogDemo" />
         <activity android:name=".adapter.AdapterDemo" />

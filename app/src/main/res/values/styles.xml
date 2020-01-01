@@ -1,12 +1,13 @@
 <resources>
 
-    <!-- Base application theme. -->
+    <!--  <item name="android:background">@drawable/splash_image</item> -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="android:background">@drawable/splash_image</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:background">@mipmap/back</item>
+        <item name="android:windowBackground">@drawable/branded_launch_screens</item>
     </style>
     <style name="button_tag">
         <item name="android:gravity">center</item>
