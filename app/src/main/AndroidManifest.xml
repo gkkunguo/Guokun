@@ -24,13 +24,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".androidview.MechanismViewTouch.ViewTouchMechanismActivity">
+        </activity>
+        <activity android:name=".androidview.SwipeRefreshLayout_banner.SwipeLayoutBannerActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <activity android:name=".androidview.SwipeRefreshLayout_banner.SwipeLayoutBannerActivity">
         </activity>
         <activity android:name=".pendingIntent.Main2Activity_penging" />
         <activity android:name=".webview.MainActivity_Webview"></activity>

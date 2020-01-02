@@ -5,6 +5,7 @@ import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.MotionEvent;
 import android.widget.ImageView;
 import android.widget.ListView;
 
@@ -23,7 +24,9 @@ public class SwipeLayoutBannerActivity extends AppCompatActivity implements OnBa
     private SwipeRefreshLayout swipeRefreshLayout;
     private ListView listView;
     private Banner banner;
-
+    /**
+     * android 滑动冲突的解决,外部拦截法\内部拦截法
+     * */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,6 +41,7 @@ public class SwipeLayoutBannerActivity extends AppCompatActivity implements OnBa
 
             }
         });
+
 
         banner = findViewById(R.id.bannerId);
         ArrayList<String> list_path = new ArrayList<>();
