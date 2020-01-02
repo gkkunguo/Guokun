@@ -21,7 +21,7 @@ import java.util.ArrayList;
 
 public class SwipeLayoutBannerActivity extends AppCompatActivity implements OnBannerListener {
     private SwipeRefreshLayout swipeRefreshLayout;
-//    private ListView listView;
+    private ListView listView;
     private Banner banner;
 
     @Override
@@ -30,14 +30,14 @@ public class SwipeLayoutBannerActivity extends AppCompatActivity implements OnBa
         setContentView(R.layout.activity_swipe_layout_banner);
 
         swipeRefreshLayout = findViewById(R.id.swipeRefreshId);
-//        listView = findViewById(R.id.listviewId);
-//
-//        swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
-//            @Override
-//            public void onRefresh() {
-//
-//            }
-//        });
+        listView = findViewById(R.id.listviewId);
+
+        swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+
+            }
+        });
 
         banner = findViewById(R.id.bannerId);
         ArrayList<String> list_path = new ArrayList<>();
@@ -67,7 +67,7 @@ public class SwipeLayoutBannerActivity extends AppCompatActivity implements OnBa
         //设置轮播图的标题集合
         banner.setBannerTitles(list_title);
         //设置轮播间隔时间
-        banner.setDelayTime(1000);
+        banner.setDelayTime(10000);
         //设置是否为自动轮播，默认是“是”。
         banner.isAutoPlay(true);
         //设置指示器的位置，小点点，左中右。
@@ -76,7 +76,10 @@ public class SwipeLayoutBannerActivity extends AppCompatActivity implements OnBa
                 .setOnBannerListener(SwipeLayoutBannerActivity.this)
                 //必须最后调用的方法，启动轮播图。
                 .start();
+
     }
+
+
     //轮播图的监听方法
     @Override
     public void OnBannerClick(int position) {

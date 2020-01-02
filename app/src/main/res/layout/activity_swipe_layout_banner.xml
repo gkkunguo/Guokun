@@ -10,12 +10,10 @@
             android:id="@+id/bannerId"
             android:layout_width="match_parent"
             android:layout_height="150dp" />
-       <!--
         <ListView
             android:id="@+id/listviewId"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
-       -->
 
     </android.support.v4.widget.SwipeRefreshLayout>
 
