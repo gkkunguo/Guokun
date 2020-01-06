@@ -2,6 +2,7 @@ package com.example.helenkellercompute.guokun.webview;
 
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Build;
 import android.support.annotation.RequiresApi;
@@ -51,6 +52,8 @@ public class MainActivity_Webview extends AppCompatActivity {
 
         //与webview不相关，测试手机的刷屏率
         testFPS();
+
+
 
 
     }

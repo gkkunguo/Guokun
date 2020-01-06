@@ -104,4 +104,10 @@ public class HandlerThreadActivity extends Activity {
         }
         return bitmap;
     }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        mUIHandler.removeCallbacksAndMessages(null);
+    }
 }
