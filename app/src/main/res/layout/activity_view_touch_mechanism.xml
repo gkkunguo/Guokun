@@ -8,6 +8,7 @@
     <Button
         android:id="@+id/buttonId"
         android:layout_width="match_parent"
-        android:layout_height="20dip"/>
+        android:text="按钮"
+        android:layout_height="wrap_content"/>
 
 </LinearLayout>
