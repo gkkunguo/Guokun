@@ -24,17 +24,18 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".androidview.animation.AnimationActivity">
+        <activity android:name=".ipc.binder.AIDLActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".androidview.MechanismViewTouch.ViewTouchMechanismActivity"></activity>
-        <activity android:name=".androidview.SwipeRefreshLayout_banner.SwipeLayoutBannerActivity"></activity>
-        <activity android:name=".androidview.videobarrage.MainActivity">
+        <activity android:name=".androidview.animation.AnimationActivity">
         </activity>
+        <activity android:name=".androidview.MechanismViewTouch.ViewTouchMechanismActivity" />
+        <activity android:name=".androidview.SwipeRefreshLayout_banner.SwipeLayoutBannerActivity" />
+        <activity android:name=".androidview.videobarrage.MainActivity"></activity>
         <activity android:name=".pendingIntent.Main2Activity_penging" />
         <activity android:name=".webview.MainActivity_Webview" />
         <activity android:name=".MainActivity" />
@@ -47,7 +48,7 @@
         <activity android:name=".layoutObject.LayoutRelativeLayout2" />
         <activity android:name=".layoutObject.LayoutTableLayout" />
         <activity android:name=".layoutObject.LayoutFrameLayout" />
-        <activity android:name=".layoutObject.LayoutFrameLayout2"></activity>
+        <activity android:name=".layoutObject.LayoutFrameLayout2" />
         <activity android:name=".layoutObject.LayoutGridLayout" />
         <activity android:name=".handlerOrMessage.HndlerOrMessageDemo" />
         <activity android:name=".handlerOrMessage.HandlerOrMessage1" />
