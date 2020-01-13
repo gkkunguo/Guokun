@@ -26,6 +26,7 @@
         <!-- ================================ activity ================================ -->
         <activity android:name=".androidview.animation.AnimationActivity">
         </activity>
+        <activity android:name=".ipc.binder.AIDLActivity"/>
         <activity android:name=".ipc.binder.BinderPoolActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
