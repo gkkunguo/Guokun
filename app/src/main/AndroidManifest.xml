@@ -48,7 +48,7 @@
         <activity android:name=".layoutObject.LayoutRelativeLayout2" />
         <activity android:name=".layoutObject.LayoutTableLayout" />
         <activity android:name=".layoutObject.LayoutFrameLayout" />
-        <activity android:name=".layoutObject.LayoutFrameLayout2"></activity>
+        <activity android:name=".layoutObject.LayoutFrameLayout2" />
         <activity android:name=".layoutObject.LayoutGridLayout" />
         <activity android:name=".handlerOrMessage.HndlerOrMessageDemo" />
         <activity android:name=".handlerOrMessage.HandlerOrMessage1" />
