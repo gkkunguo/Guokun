@@ -41,19 +41,22 @@ public class BinderPoolActivity extends AppCompatActivity {
         System.out.println("content:" + msg);
         try {
             String password = mSecurityCenter.encrypt(msg);
-            Log.i(TAG, "doWork: "+password);
-            Log.i(TAG, "doWork: "+ mSecurityCenter.decrypt(password));
+            System.out.println("encrypt:" + password);
+            System.out.println("decrypt:" + mSecurityCenter.decrypt(password));
         } catch (RemoteException e) {
             e.printStackTrace();
         }
 
         Log.d(TAG, "visit ICompute");
-        IBinder computeBinder = binderPool.queryBinder(BinderPool.BINDER_COMPUTE);
+        IBinder computeBinder = binderPool
+                .queryBinder(BinderPool.BINDER_COMPUTE);
+        ;
         mCompute = ComputeImpl.asInterface(computeBinder);
         try {
-            Log.i(TAG, "doWork: "+"3+5=" + mCompute.add(3, 5));
+            System.out.println("3+5=" + mCompute.add(3, 5));
         } catch (RemoteException e) {
             e.printStackTrace();
         }
     }
+
 }

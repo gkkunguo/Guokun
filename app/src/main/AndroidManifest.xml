@@ -10,7 +10,6 @@
 
     <uses-feature android:name="android.hardware.Camera" /> <!-- 拍照权限 -->
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-    <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.READ_LOGS" /> <!-- 保存资源到SD卡 -->
@@ -25,6 +24,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".androidview.animation.AnimationActivity">
+        </activity>
+        <activity android:name=".ipc.binder.BinderPoolActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -108,13 +109,20 @@
         <activity android:name=".design.MVP.View.StudentActivity" />
         <activity android:name=".design.MVC.View.BookActivity" />
         <activity android:name=".activity.OkhttpActivity" />
-        <activity android:name=".activity.RetrofitActivity" /> <!-- service -->
+        <activity android:name=".activity.RetrofitActivity" />
+
+        <!-- ================================ service ================================ -->
         <service android:name=".StartServiceDemo" />
         <service android:name=".StartServiceDemo1" />
         <service android:name=".BroadcastStartServiceDemo" />
         <service android:name=".musicandvideo.MusicDemoService" />
         <service android:name=".service.MIntentService" />
-        <service android:name=".service.MService" /> <!-- 广播 -->
+        <service android:name=".service.MService" />
+        <service android:name=".ipc.binder.BinderPoolService" android:process=":remote">
+
+        </service>
+
+        <!-- ================================广播 ================================ -->
         <receiver android:name=".BroadcastReceiverMyReceiver">
             <intent-filter>
                 <action android:name="guokun_broadcastreceiver" />
