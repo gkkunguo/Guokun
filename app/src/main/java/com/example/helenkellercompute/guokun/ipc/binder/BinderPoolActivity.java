@@ -1,10 +1,16 @@
 package com.example.helenkellercompute.guokun.ipc.binder;
 
+import android.graphics.Color;
+import android.os.Build;
 import android.os.IBinder;
 import android.os.RemoteException;
+import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 
 import com.example.helenkellercompute.guokun.ICompute;
 import com.example.helenkellercompute.guokun.ISecurityCenter;
@@ -16,10 +22,16 @@ public class BinderPoolActivity extends AppCompatActivity {
     private ISecurityCenter mSecurityCenter;
     private ICompute mCompute;
 
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_binder_pool);
+        Window window = getWindow();
+        window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+        window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+        window.setStatusBarColor(getResources().getColor(R.color.colorPrimary));
+
         new Thread(new Runnable() {
 
             @Override
