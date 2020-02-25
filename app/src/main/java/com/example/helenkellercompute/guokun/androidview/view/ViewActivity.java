@@ -1,6 +1,7 @@
 package com.example.helenkellercompute.guokun.androidview.view;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Build;
 import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
@@ -20,6 +21,7 @@ public class ViewActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view);
+
 
         buttonId = findViewById(R.id.buttonId);
 

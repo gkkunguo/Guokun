@@ -4,6 +4,7 @@ import com.example.helenkellercompute.guokun.activity.OkhttpActivity;
 import com.example.helenkellercompute.guokun.activity.RetrofitActivity;
 import com.example.helenkellercompute.guokun.adapter.AdapterDemo;
 import com.example.helenkellercompute.guokun.alertdialog.AlertDialogDemo;
+import com.example.helenkellercompute.guokun.androidview.activityToService.ServiceActivity;
 import com.example.helenkellercompute.guokun.androidview.animation.AnimationActivity;
 import com.example.helenkellercompute.guokun.androidview.videobarrage.MainActivity;
 import com.example.helenkellercompute.guokun.dataOrOracle.OracleDemo;
@@ -82,4 +83,9 @@ public class AppContents {
     MainActivity_Webview mainActivity_webview;
     //ipc binder机制
     BinderPoolActivity binderPoolActivity;
+
+    //Activity与Service的通信
+    ServiceActivity serviceActivity;
+
+    //自定义view
 }
