@@ -23,24 +23,23 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".androidview.activityToService.ServiceActivity">
-
-        </activity>
-        <activity android:name=".androidview.view.ViewActivity">
-        </activity>
-        <activity android:name=".androidview.animation.AnimationActivity" />
-        <activity android:name=".ipc.binder.AIDLActivity" />
-        <activity android:name=".ipc.binder.BinderPoolActivity"></activity>
-        <activity android:name=".androidview.MechanismViewTouch.ViewTouchMechanismActivity" />
-        <activity android:name=".androidview.SwipeRefreshLayout_banner.SwipeLayoutBannerActivity" />
-        <activity android:name=".androidview.videobarrage.MainActivity" />
-        <activity android:name=".pendingIntent.Main2Activity_penging" />
-        <activity android:name=".pendingIntent.Main2Activity">
+        <activity android:name=".androidview.custom.CustomActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".androidview.activityToService.ServiceActivity"></activity>
+        <activity android:name=".androidview.view.ViewActivity"></activity>
+        <activity android:name=".androidview.animation.AnimationActivity" />
+        <activity android:name=".ipc.binder.AIDLActivity" />
+        <activity android:name=".ipc.binder.BinderPoolActivity" />
+        <activity android:name=".androidview.MechanismViewTouch.ViewTouchMechanismActivity" />
+        <activity android:name=".androidview.SwipeRefreshLayout_banner.SwipeLayoutBannerActivity" />
+        <activity android:name=".androidview.videobarrage.MainActivity" />
+        <activity android:name=".pendingIntent.Main2Activity_penging" />
+        <activity android:name=".pendingIntent.Main2Activity">
         </activity>
         <activity android:name=".webview.MainActivity_Webview" />
         <activity android:name=".MainActivity" />
@@ -121,7 +120,7 @@
         <service android:name=".musicandvideo.MusicDemoService" />
         <service android:name=".service.MIntentService" />
         <service android:name=".service.MService" />
-        <service android:name=".androidview.activityToService.MyService"/>
+        <service android:name=".androidview.activityToService.MyService" />
         <service
             android:name=".ipc.binder.BinderPoolService"
             android:process=":remote" /> <!-- ================================广播 ================================ -->

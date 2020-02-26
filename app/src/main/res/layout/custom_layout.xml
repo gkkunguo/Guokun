@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:gravity="center_vertical"
+    android:layout_height="50dp">
+
+    <ImageView
+        android:id="@+id/customImageViewLeft"
+        android:layout_width="wrap_content"
+        android:src="@drawable/video_default_icon"
+        android:layout_alignParentLeft="true"
+        android:layout_height="match_parent"/>
+    <TextView
+        android:id="@+id/customTextView"
+        android:layout_width="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_centerInParent="true"
+        android:text="天气标题"
+        android:layout_height="match_parent"/>
+    <ImageView
+        android:id="@+id/customImageViewRight"
+        android:layout_width="wrap_content"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/video_default_icon"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>

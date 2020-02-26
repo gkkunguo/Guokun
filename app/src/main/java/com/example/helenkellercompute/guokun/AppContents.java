@@ -88,4 +88,5 @@ public class AppContents {
     ServiceActivity serviceActivity;
 
     //自定义view
+
 }
